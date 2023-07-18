@@ -4,8 +4,7 @@ import { LocalAuthGuard } from './guards/local-auth.guard';
 import { Response } from 'express';
 import { MessagePattern, Payload } from '@nestjs/microservices';
 import { JwtAuthGuard } from './guards/jwt-auth.guard';
-import { UserDocument } from './users/models/user.schema';
-import { CurrentUser } from '@app/common';
+import { CurrentUser, UserDocument } from '@app/common';
 
 @Controller('auth')
 export class AuthController {
